@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.saulhervas.calculatorkidsapp.ui.navigation.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_additionFragment"
+            app:destination="@id/additionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_subtractionFragment"
+            app:destination="@id/subtractionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/additionFragment"
+        android:name="com.saulhervas.calculatorkidsapp.ui.navigation.AdditionFragment"
+        android:label="fragment_addition"
+        tools:layout="@layout/fragment_addition">
+        <action
+            android:id="@+id/action_additionFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_additionFragment_to_checkSplashScreen"
+            app:destination="@id/checkSplashScreen" />
+        <action
+            android:id="@+id/action_additionFragment_to_failSplashScreen"
+            app:destination="@id/failSplashScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/subtractionFragment"
+        android:name="com.saulhervas.calculatorkidsapp.ui.navigation.SubtractionFragment"
+        android:label="fragment_subtraction"
+        tools:layout="@layout/fragment_subtraction">
+        <action
+            android:id="@+id/action_subtractionFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_subtractionFragment_to_checkSplashScreen"
+            app:destination="@id/checkSplashScreen" />
+        <action
+            android:id="@+id/action_subtractionFragment_to_failSplashScreen"
+            app:destination="@id/failSplashScreen" />
+    </fragment>
+    <activity
+        android:id="@+id/checkSplashScreen"
+        android:name="com.saulhervas.calculatorkidsapp.ui.splash.CheckSplashScreen"
+        android:label="activity_check_splash_screen"
+        tools:layout="@layout/activity_check_splash_screen" />
+    <activity
+        android:id="@+id/failSplashScreen"
+        android:name="com.saulhervas.calculatorkidsapp.ui.splash.FailSplashScreen"
+        android:label="activity_fail_splash_screen"
+        tools:layout="@layout/activity_fail_splash_screen" />
+</navigation>

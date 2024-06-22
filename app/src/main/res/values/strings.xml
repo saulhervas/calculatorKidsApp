@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">calculatorKidsApp</string>
+    <string name="app_name">Calculadora Kids</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tv_main">Elige una operación</string>
+    <string name="btn_addition">Suma</string>
+    <string name="btn_subtraction">Resta</string>
 </resources>
