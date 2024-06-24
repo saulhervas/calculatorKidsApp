@@ -1,14 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_app"
     tools:context=".ui.navigation.AdditionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/tv_main" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/playwrite_regular"
+        android:padding="20dp"
+        android:text="@string/btn_addition"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="31dp"
+        android:backgroundTint="@color/background_app"
+        android:padding="20dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toStartOf="@+id/tv_main"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/playwrite_regular"
+        android:textColor="@color/white"
+        android:textSize="62sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_num2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/playwrite_regular"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="62sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_num2"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main" />
+
+    <TextView
+        android:id="@+id/tv_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/playwrite_regular"
+        android:textColor="@color/white"
+        android:textSize="62sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num1"
+        tools:layout_editor_absoluteY="277dp"
+        tools:text="2" />
+
+    <EditText
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/background_component"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/playwrite_regular"
+        android:inputType="number"
+        android:paddingHorizontal="72dp"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine"
+        tools:text="4" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="@color/background_component"
+        android:fontFamily="@font/playwrite_regular"
+        android:text="@string/btn_calculate"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/tvLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="--------------------------------------------------------"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add" />
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_percent="0.32010943" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_begin="357dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
