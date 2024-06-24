@@ -7,4 +7,4 @@ Aplicacion para el aprendizaje de las sumas y las restas de niños de primaria
 |                               Pantalla Suma                              |                                   Pantalla Resta                                  |
 |   ![pantalla_suma](https://github.com/saulhervas/calculatorKidsApp/assets/136034899/db9678e8-dddd-41d4-9236-3024a1fc017e) | ![pantalla_resta](https://github.com/saulhervas/calculatorKidsApp/assets/136034899/634f61d5-bae7-427c-a06d-03bb6358df3b)   |
 |                               Pantalla Splash Acierto                              |                                   Pantalla Splash Fallo                                  |
-|    |  ![splash_fallo](https://github.com/saulhervas/calculatorKidsApp/assets/136034899/316b6554-4154-4033-b86a-9fc7e32d5793)  |
+|    |  ![splash_fallo](https://github.com/saulhervas/calculatorKidsApp/assets/136034899/e0c537ef-342e-451d-b23b-479aca91ef2d)  |
