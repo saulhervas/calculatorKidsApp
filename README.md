@@ -1,4 +1,21 @@
-Aplicacion para el aprendizaje de las sumas y las restas de niños de primaria
+# Calculator Kids App
+
+Una aplicación educativa diseñada para niños de primaria, centrada en el aprendizaje de operaciones matemáticas básicas como sumas y restas. La aplicación incluye varias pantallas interactivas para fomentar la práctica de las matemáticas de forma lúdica.
+
+## Características
+
+- **Pantalla Splash**: Bienvenida animada al usuario.
+- **Pantalla Principal**: Acceso a las funcionalidades principales.
+- **Pantalla Suma y Resta**: Realización de ejercicios interactivos.
+- **Pantallas de Retroalimentación**:
+  - **Acierto** 
+  - **Fallo**
+
+## Tecnologías Utilizadas
+
+- **Lenguaje**: Kotlin
+- **Arquitectura**: Diseño enfocado en modularidad y buenas prácticas para apps Android.
+- **Interfaz de usuario**: Diseño enfocado en niños, con colores vivos y elementos grandes
 
 
 |                               Pantalla MainSplash                              |                                   Pantalla Principal                                |
